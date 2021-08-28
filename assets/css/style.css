@@ -4,7 +4,7 @@
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  -ms-overflow-style: scrollbar;
+  -ms-overflow-style: scroll;
 }
 
 body {
@@ -886,7 +886,6 @@ blockquote {
   font-size: 15px;
   padding: 0;
 }
-
 .font-judul {
   position: relative;
   font-family: "Quicksand", sans-serif;
@@ -894,50 +893,57 @@ blockquote {
   color:whitesmoke;
   font-weight: 200;
   font-size: 45px;
-  padding-top: -20px;
 }
-
 .font-subjudul {
+  text-align: center;
   position: relative;
   font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
   color:chocolate;
   font-weight: 600;
-  padding-top:0px;
+  padding:20px;
   font-size: 30px;
   z-index: 1010;
 }
-
+.AboutMe-section .font-subjudul{
+  text-align: left;
+  padding-left: 0px;
+  padding: 0px;
+  font-size: 30px;
+}
 .font-prgf {
   position: relative;
   font-family: "Quicksand",sans-serif;
   letter-spacing: 0px;
   color:aliceblue;
-  font-weight: 400;
+  font-weight: 300;
   padding-top:0px;
   font-size: 18px;
-  z-index: 1010;
   text-align: justify;
+  padding-bottom: 10px;
 }
-
-
 .font-alt {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   letter-spacing: 1px;
+  padding-bottom: 5px;
 }
-
 .font-serif {
   font-family: "Quicksand", sans-serif;
 }
-
 .large-text {
   font-size: 24px !important;
 }
-
 .rotate {
   text-shadow: none !important;
 }
 
+.social{
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  gap: 10px;
+}
 .module-title {
   position: relative;
   letter-spacing: 4px;
@@ -947,7 +953,6 @@ blockquote {
   color: #111;
   margin: 0 0 70px;
 }
-
 .module-subtitle {
   text-align: center;
   font-size: 17px;
@@ -1130,18 +1135,14 @@ Hero Slider
 
 .titan-caption {
   position: relative;
-  display: table;
+  text-align: center;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
-  background: #335063;
-  mix-blend-mode: overlay;
 }
 
 .caption-content {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  text-align: left;
+  margin: auto;
 }
 
 .break-section {
@@ -1440,7 +1441,8 @@ General Styles - Owlcarousel
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  z-index: 0;
+  height: 100%;
+  min-height: 650px;
   background-size: cover;
 }
 
@@ -1450,8 +1452,30 @@ General Styles - Owlcarousel
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
   opacity: 0.8;
+
+}
+
+.home-section .container{
+  position: relative;
+  max-width:350px;
+  margin-right: auto;
+  margin-left: auto;
+  backdrop-filter:blur(8px);
+  border-radius: 20px;
+  top: 40%;
+  border-color: blueviolet;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.home-section .img-place {
+  position: relative;
+  padding: 10px;
+  margin:auto;
+  max-width: 160px;
+  min-height: 160px;
 }
 
 .AboutMe-section {
@@ -1464,7 +1488,6 @@ General Styles - Owlcarousel
   left: 0;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
   background-size: cover;
 }
 
@@ -1483,32 +1506,30 @@ General Styles - Owlcarousel
 
 .AboutMe-section .img-place {
   position: relative;
+  padding-bottom: 10px;
   padding-top: 35px;
-  width: 250px;
-  height: 250px;
+  max-width: 240px;
+  min-height: 240px;
   background-size: cover;
   overflow: unset;
-  z-index:1010; 
 }
-
-
 .AboutMe-section .container{
   position: relative;
   width: 85%;
-  padding-right: 15px;
-  padding-left: 15x;
   margin-right: auto;
   margin-left: auto;
   backdrop-filter: blur(8px);
   border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: chocolate;
 }
-
 .timeline-section {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  width: 100vw;
+  width: 100%;
   padding: 100px;
   font-family: 'Source Sans Pro', arial, sans-serif;
   font-weight: 300;
@@ -1552,15 +1573,14 @@ General Styles - Owlcarousel
 
 .transition-section {
   position: relative;
-  display: block;
-  padding: 15px 0;
+  padding: opx 0;
   width: 100%;
   overflow: hidden;
   top: 0;
   left: 0;
-  height: 100%;
+  height: auto;
   background-size: cover;
-  z-index: -1;
+  z-index: 99;
 }
 
 
@@ -1609,21 +1629,25 @@ General Styles - Owlcarousel
   opacity: 0.8;
 }
 .song-section .badge-subhead  {
-  background-color: rgba(158, 193, 223, 0.15);
-  color: #171f20;
+  font-size: 14px;
+  border-radius: 40px;
+  background-color:none;
+  border-color: blueviolet;
+  color: #1a1df5;
 }
 
 
 
 .titan-title-size-1 {
-  letter-spacing: 4px;
-  font-size: 15px;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .titan-title-size-2 {
   line-height: 1.3;
   letter-spacing: 3px;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight:400;
   opacity: .8;
 }
 
@@ -1738,7 +1762,6 @@ General Styles - Owlcarousel
 .shop-page-header:before {
   background: rgba(34, 34, 34, 0.3);
 }
-
 /*--------------------------------------------------------------
 	Footer
 --------------------------------------------------------------*/
@@ -2609,6 +2632,12 @@ Google map
   padding: 0;
   margin: 0;
 }
+.widget .img-place {
+  position: relative;
+  margin:auto;
+  max-width: 200px;
+  min-height: 200px;
+}
 
 /* Icon List */
 .widget .icon-list li {
@@ -2620,6 +2649,8 @@ Google map
   color: #666666;
   padding-right: 5px;
 }
+
+
 
 /* Posts */
 .widget-posts li {
@@ -3163,25 +3194,34 @@ Google map
   }
   
   .font-subjudul {
+    text-align: center;
     position: relative;
     font-family: "Quicksand", sans-serif;
     letter-spacing: 1px;
     color:chocolate;
     font-weight: 600;
-    padding-top:0px;
+    padding:10px;
     font-size: 22px;
     z-index: 1010;
   }
   
+  .AboutMe-section .font-subjudul{
+    text-align: left;
+    padding-left: 0px;
+    padding: 0px;
+    font-size: 24px;
+  }
+
   .font-prgf {
     position: relative;
     font-family: "Quicksand",sans-serif;
     letter-spacing: 0px;
     color:aliceblue;
-    font-weight: 400;
+    font-weight: 200;
     padding-top:0px;
-    font-size: 16px;
+    font-size: 12px;
     text-align: justify;
+    padding-bottom: 15px;
   }
 
   .timeline-section .container{
@@ -3191,34 +3231,56 @@ Google map
     margin-left: auto;
     backdrop-filter: blur(8px);
     border-radius: 20px;
-    z-index: 1010;
   }
-  
-  
+
+  .song-section .badge-subhead  {
+    font-size: 8px;
+    border-radius: 40px;
+    background-color: rgba(130, 156, 179, 0.658);
+    color: #1a1df5;
+  }
+
+  .titan-caption .badge-subhead {
+    font-size: 4px;
+    border-radius: 40px;
+  }
+
+  .home-section .container{
+    position: relative;
+    max-width:240px;
+    margin-right: auto;
+    margin-left: auto;
+    backdrop-filter:blur(8px);
+    border-radius: 20px;
+    top: 40%;
+    border-color: blueviolet;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+
 }
 
-
-.badge-subhead {
+.home-section .badge-subhead{
+  width: 85%;
+  margin: auto;
   margin-bottom: 8px;
-  padding: 10px 30px;
-  background-color: rgba(116, 116, 116, 0.15);
-  color: #747474;
-  font-size: 14px;
+  background-color:none;
+  border-color: blueviolet;
+  border-style: solid ;
+  border-width: 1px;
+  color: #fff5f5;
+  font-size: 13px;
+  font-family: "Quicksand", sans-serif;
   border-radius: 40px;
 }
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
-
-
-
 #box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 250px;
+  max-width: 240px;
+  max-height: 240px;
   color: white;
   font-family: 'Raleway';
   border-radius: 50%;
@@ -3227,7 +3289,7 @@ Google map
 
 
  .gradient-border {
-  --borderWidth: 6px;
+  --borderWidth: 2px;
   background: #1D1F20;
   position: relative;
   border-radius: 50%;

@@ -42,7 +42,7 @@
 
 
     <!-- Template specific stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
@@ -58,7 +58,7 @@
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-    <main>
+    <div>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
@@ -73,9 +73,7 @@
               </li>
               <li class="nav-item active"><a href="#AboutMe" class="nav-link" data-animate="scrolling">About Me</a>
               </li>
-              <li class="nav-item active"><a href="#Portofolio" class="nav-link" data-animate="scrolling">My experiences</a>
-              </li>
-              <li class="nav-item active"><a href="#Blog" class="nav-link" data-animate="scrolling">My Blog</a>
+              <li class="nav-item active"><a href="#Blog" class="nav-link" data-animate="scrolling">Blog</a>
               </li>
               <li class="nav-item active"><a href="#Gallery" class="nav-link" data-animate="scrolling">Gallery</a>
               </li>
@@ -88,49 +86,36 @@
         </div>
       </nav>
 
-      <section class="home-section bg-dark-30" id="Home" data-background="assets/images/section-5.jpg">
-        <video src="assets/Video/earth.mp4" muted loop autoplay></video>
-        <audio autoplay id="myaudio">
-          <source src="assets/Video/souneFX.mp3" >
-        </audio>
-        <script>
-          var audio = document.getElementById("myaudio");
-          audio.volume = 0.06;
-        </script>
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1">HELLO &amp; WELCOME</div>
-            <div class="font-alt mb-40 titan-title-size-3">I'M ARHAM ZAKKI EDELO</div><a class="badge" href="#about">Geophysical Engineer</a>
+      <div class="home-section bg-dark-30" id="Home" data-background="assets/images/GeoService.jpg">
+        <div class="container">
+          <div class= "img-place wow bounceInUp">
+            <div class="gradient-border" id="box">
+              <img src="assets/images/me.jpg" style = "border-radius: 50%;"alt="Me">
+            </div>
           </div>
-        </div>
-      </section>
-
-      <div class="transition-section " id ="AboutMe" style= "background-image: url(assets/images/section-81.jpg);">
-        <div class="block ">
-          <div class="module-title">ABOUT ME</div>
+          <div class="titan-caption mb-20" >
+            <div class="font-alt titan-title-size-1">Hello &amp; Welcome</div>
+            <div class="font-alt titan-title-size-2">I'm Arham Zakki Edelo</div>
+            <div class="badge-subhead" href="#about"><a href = "https://www.its.ac.id/tgeofisika/">Geophysical Engineering Graduate</a></div>
+          </div>
+          <div class="social">
+            <a href = "https://twitter.com/zakki_edelo"><span class="ti-twitter"></span></a>
+            <a href = "https://www.instagram.com/geoscience_12"><span class="ti-instagram"></span></a>
+            <a href = "https://www.linkedin.com/in/arham-zakki-edelo-11672a15b"><span class="ti-linkedin"></span></a>
+            <a href = "https://github.com/arham99"><span class="ti-github"></span></a>
+          </div> 
         </div>
       </div>
 
-
-
-      <div class="AboutMe-section" id ="AboutMe" style= "background-image: url(assets/images/geopis.jpg);">
+      <div class="AboutMe-section parallax-bg" id ="AboutMe" style= "background-image: url(assets/images/img_TG6.jpg)">
         <div class="container">
           <div class="row">
-            <div class ="col-sm-4 col-xs-offset-0 pb-30">
-              <div class= "img-place wow bounceInUp">
-                <div class="gradient-border" id="box">
-                  <img src="assets/images/me.jpg" style = "border-radius: 50%;"alt="Me">
-                </div>
-              </div>
-            </div>
             <div class="col-sm-12 col-xs-offset-0 wow fadeInRight ">
-              <div class="font-judul">Arham Zakki Edelo</div>
-              <div class="font-subjudul">Geophysical Engineer</div>
               <div class="font-prgf">Hello World!, welcome to the virtual version of me.
                 I recently graduated with a B.Eng degree in major of Geophysist, my area specialization includes
                 earthquake/microearthquake(MEQ) processing, seismic data quantitative interpretation, python 
                 programming for data science (geophysics), and mapping & geographic information system analyst.</div>
-              <div class="font-prgf">in nutshell, i really love science, technology and art, of course,
+              <div class="font-prgf">In nutshell, i really love science, technology and art, of course,
                 technology as art itself. I love watching movies and then reviewing their stories and graphical features in my personal blog,
                 designing web, creating video content, and editing photos even though technically it's not my field of education, but yes i just love doing it.
                 I realize earth science and engineering is a tough work field, it takes hard works as a team, integrity,  and high responsibility. Therefore, i extremely 
@@ -142,164 +127,62 @@
           </div>
         </div>
       </div>
-
-
       <!-- Musikk -->
-      
       <div class="song-section" id="song">
         <audio id="lagu" src="assets/Video/Queen - Somebody To Love (Official Video).mp3" preload="auto"></audio>
-        <div class="text-center wow fadeInUp" onClick="togglePlay()"><b class="btn badge-subhead"><span class="ti-music-alt"></span> Bored with the background music ?, click here <span class="ti-music-alt"></span></b></div>
+        <div class="text-center wow fadeInUp" onClick="togglePlay()"><b class="btn badge-subhead"><span class="ti-music-alt"></span> wanna hear some music? click here <span class="ti-music-alt"></span></b></div>
       </div>
 
-
-
-          <div class="row">
-            <div class="col-sm-2 col-sm-offset-5">
-              <div class="large-text align-center"><a class="section-scroll" href="#services"><i class="fa fa-angle-down"></i></a></div>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-sm-2 col-sm-offset-5">
+          <div class="large-text align-center"><a class="section-scroll" href="#news"><i class="fa fa-angle-down"></i></a></div>
         </div>
       </div>
 
-      <!-- EDUCATION TMELINE -->
-      <div class="timeline-section" id="AboutMe" style="background-image: url(assets/images/img_TG6.jpg);">
-        <div class="container pt-30">
-          <div class="row">
-            <div class="col-md-6 wow fadeInRight">
-              <h2 class="font-subjudul">Education</h2>
-              <ul class="timeline mt-4 pr-md-5">
-                <li>
-                  <div class="title">2017 - 2021</div>
-                  <div class="details">
-                    <h5>Geophysical Engineering</h5>
-                    <small >Sepuluh Nopember Institute Of Technologi (ITS)</small>
-                    <p>(Surabaya, Indonesia)</p>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">2009</div>
-                  <div class="details">
-                    <h5>Specialize of course</h5>
-                    <small >University of Study</small>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">2008</div>
-                  <div class="details">
-                    <h5>Specialize of course</h5>
-                    <small>University of Study</small>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-              <h2 class="font-subjudul">Experience</h2>
-              <ul class="timeline mt-4 pr-md-5">
-                <li>
-                  <div class="title">2017 - Current</div>
-                  <div class="details">
-                    <h5>Specialize of course</h5>
-                    <small >University of Study</small>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">2014</div>
-                  <div class="details">
-                    <h5>Specialize of course</h5>
-                    <small >University of Study</small>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="title">2011</div>
-                  <div class="details">
-                    <h5>Specialize of course</h5>
-                    <small >University of Study</small>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-
-      <div class="experience-section">
-
-      </div>
-        
-        <!-- END EDUCATION TIMELINE -->
-
-        <hr class="divider-w">
-        <section class="module" id="services">
+      <div>
+        <section class="module" id="news">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Our Services</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+                <h2 class="module-title font-alt">My Latest Projects</h2>
+                <div class="module-subtitle font-serif">Here i share some of my projects, most of those are focusing on earthquake, python data processing, and passive seismic applications.</div>
               </div>
             </div>
-            <div class="row multi-columns-row">
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="features-item">
-                  <div class="features-icon"><span class="icon-lightbulb"></span></div>
-                  <h3 class="features-title font-alt">Ideas and concepts</h3>
-                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+            <div class="row multi-columns-row post-columns">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-1.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="features-item">
-                  <div class="features-icon"><span class="icon-bike"></span></div>
-                  <h3 class="features-title font-alt">Optimised for speed</h3>
-                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="features-item">
-                  <div class="features-icon"><span class="icon-tools"></span></div>
-                  <h3 class="features-title font-alt">Designs &amp; interfaces</h3>
-                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="features-item">
-                  <div class="features-icon"><span class="icon-gears"></span></div>
-                  <h3 class="features-title font-alt">Highly customizable</h3>
-                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="features-item">
-                  <div class="features-icon"><span class="icon-tools-2"></span></div>
-                  <h3 class="features-title font-alt">Coding &amp; development</h3>
-                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="features-item">
-                  <div class="features-icon"><span class="icon-genius"></span></div>
-                  <h3 class="features-title font-alt">Features &amp; plugins</h3>
-                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="features-item">
-                  <div class="features-icon"><span class="icon-mobile"></span></div>
-                  <h3 class="features-title font-alt">Responsive design</h3>
-                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="features-item">
-                  <div class="features-icon"><span class="icon-lifesaver"></span></div>
-                  <h3 class="features-title font-alt">Dedicated support</h3>
-                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
                 </div>
               </div>
             </div>
@@ -318,88 +201,12 @@
             </div>
           </div>
         </section>
-        <section class="module pb-0" id="works">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Our Works</h2>
-                <div class="module-subtitle font-serif"></div>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <ul class="filter font-alt" id="filters">
-                  <li><a class="current wow fadeInUp" href="#" data-filter="*">All</a></li>
-                  <li><a class="wow fadeInUp" href="#" data-filter=".illustration" data-wow-delay="0.2s">Illustration</a></li>
-                  <li><a class="wow fadeInUp" href="#" data-filter=".marketing" data-wow-delay="0.4s">Marketing</a></li>
-                  <li><a class="wow fadeInUp" href="#" data-filter=".photography" data-wow-delay="0.6s">Photography</a></li>
-                  <li><a class="wow fadeInUp" href="#" data-filter=".webdesign" data-wow-delay="0.6s">Web Design</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
-            <li class="work-item illustration webdesign"><a href="portfolio-single-1.html">
-                <div class="work-image"><img src="assets/images/work-1.jpg" alt="Portfolio Item"/></div>
-                <div class="work-caption font-alt">
-                  <h3 class="work-title">Corporate Identity</h3>
-                  <div class="work-descr">Illustration</div>
-                </div></a></li>
-            <li class="work-item marketing photography"><a href="portfolio-single-1.html">
-                <div class="work-image"><img src="assets/images/work-2.jpg" alt="Portfolio Item"/></div>
-                <div class="work-caption font-alt">
-                  <h3 class="work-title">Bag MockUp</h3>
-                  <div class="work-descr">Marketing</div>
-                </div></a></li>
-            <li class="work-item illustration photography"><a href="portfolio-single-1.html">
-                <div class="work-image"><img src="assets/images/work-3.jpg" alt="Portfolio Item"/></div>
-                <div class="work-caption font-alt">
-                  <h3 class="work-title">Disk Cover</h3>
-                  <div class="work-descr">Illustration</div>
-                </div></a></li>
-            <li class="work-item marketing photography"><a href="portfolio-single-1.html">
-                <div class="work-image"><img src="assets/images/work-4.jpg" alt="Portfolio Item"/></div>
-                <div class="work-caption font-alt">
-                  <h3 class="work-title">Business Card</h3>
-                  <div class="work-descr">Photography</div>
-                </div></a></li>
-            <li class="work-item illustration webdesign"><a href="portfolio-single-1.html">
-                <div class="work-image"><img src="assets/images/work-5.jpg" alt="Portfolio Item"/></div>
-                <div class="work-caption font-alt">
-                  <h3 class="work-title">Business Card</h3>
-                  <div class="work-descr">Webdesign</div>
-                </div></a></li>
-            <li class="work-item marketing webdesign"><a href="portfolio-single-1.html">
-                <div class="work-image"><img src="assets/images/work-6.jpg" alt="Portfolio Item"/></div>
-                <div class="work-caption font-alt">
-                  <h3 class="work-title">Business Cards in paper clip</h3>
-                  <div class="work-descr">Marketing</div>
-                </div></a></li>
-          </ul>
-        </section>
-        <section class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
-                <div class="callout-text font-alt">
-                  <h3 class="callout-title">Want to see more works?</h3>
-                  <p>We are always open to interesting projects.</p>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-2">
-                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="portfolio_boxed_gutter_col_3.html">Lets view portfolio</a></div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section class="module" id="alt-features">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Our features</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+                <h2 class="module-title font-alt">My Gallery</h2>
+                <div class="module-subtitle font-serif">I frequently lost my photos, so i decide to share them here in case i lost them again</div>
               </div>
             </div>
             <div class="row">
@@ -422,7 +229,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
-                <div class="alt-services-image align-center"><img src="assets/images/promo.png" alt="Feature Image"></div>
+                <div class="alt-services-image align-center"><img src="assets/images/58475.jpg" alt="Feature Image"></div>
               </div>
               <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="alt-features-item">
@@ -445,79 +252,54 @@
             </div>
           </div>
         </section>
-        <hr class="divider-w">
-        <section class="module" id="team">
+        <section class="module" id="news">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Meet Our Team</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+                <h2 class="module-title font-alt">Latest Blog</h2>
+                <div class="module-subtitle font-serif">Like I said, I love movies. here I write down some of my thoughts on the best films of all time</div>
               </div>
             </div>
-            <div class="row">
-              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/team-1.jpg" alt="Member Photo"/>
-                    <div class="team-detail">
-                      <h5 class="font-alt">Hi all</h5>
-                      <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
-                      <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
-                    </div>
+            <div class="row multi-columns-row post-columns">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-1.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
                   </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Jim Stone</div>
-                    <div class="team-role">Art Director</div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                   </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
                 </div>
               </div>
-              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/team-2.jpg" alt="Member Photo"/>
-                    <div class="team-detail">
-                      <h5 class="font-alt">Good day</h5>
-                      <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
-                      <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
-                    </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
                   </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Andy River</div>
-                    <div class="team-role">Creative director</div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                   </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
                 </div>
               </div>
-              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/team-3.jpg" alt="Member Photo"/>
-                    <div class="team-detail">
-                      <h5 class="font-alt">Hello</h5>
-                      <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
-                      <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
-                    </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
                   </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Adele Snow</div>
-                    <div class="team-role">Account manager</div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                   </div>
-                </div>
-              </div>
-              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/team-4.jpg" alt="Member Photo"/>
-                    <div class="team-detail">
-                      <h5 class="font-alt">Yes, it's me</h5>
-                      <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
-                      <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Dylan Woods</div>
-                    <div class="team-role">Developer</div>
-                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section>       
         <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/testimonial_bg.jpg">
           <div class="testimonials-slider pt-140 pb-140">
             <ul class="slides">
@@ -596,61 +378,7 @@
             </ul>
           </div>
         </section>
-        <section class="module" id="news">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Latest blog posts</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
-              </div>
-            </div>
-            <div class="row multi-columns-row post-columns">
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-1.jpg" alt="Blog-post Thumbnail"/></a></div>
-                  <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
-                    </div>
-                  </div>
-                  <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                  </div>
-                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/></a></div>
-                  <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
-                    </div>
-                  </div>
-                  <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                  </div>
-                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
-                  <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
-                    </div>
-                  </div>
-                  <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                  </div>
-                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="module-small bg-dark">
+        <!-- <div class="module-small bg-dark">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
@@ -672,7 +400,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <section class="module" id="contact">
           <div class="container">
             <div class="row">
@@ -707,60 +435,24 @@
             </div>
           </div>
         </section>
+
         <div class="module-small bg-dark">
           <div class="container">
             <div class="row">
               <div class="col-sm-3">
                 <div class="widget">
-                  <h5 class="widget-title font-alt">About Titan</h5>
-                  <p>The languages only differ in their grammar, their pronunciation and their most common words.</p>
-                  <p>Phone: +1 234 567 89 10</p>Fax: +1 234 567 89 10
-                  <p>Email:<a href="#">somecompany@example.com</a></p>
+                  <h5 class="widget-title font-alt">Contact Me</h5>
+                  <p>I am always open to any remarkable question and discussion</p>
+                  <div><span class="ti-comments"></span> <a href="https://wa.me/6282287162232">+6282287163332</a> </div>
+                  <div><span class="ti-email"></span> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=edelo.arham@gmail.com&su=SUBJECT&body=Hello!">edelo.arham@gmail.com </a></div>
                 </div>
               </div>
-              <div class="col-sm-3">
+              <div class="col-sm-3 col-lg-offset-6">
                 <div class="widget">
-                  <h5 class="widget-title font-alt">Recent Comments</h5>
-                  <ul class="icon-list">
-                    <li>Maria on <a href="#">Designer Desk Essentials</a></li>
-                    <li>John on <a href="#">Realistic Business Card Mockup</a></li>
-                    <li>Andy on <a href="#">Eco bag Mockup</a></li>
-                    <li>Jack on <a href="#">Bottle Mockup</a></li>
-                    <li>Mark on <a href="#">Our trip to the Alps</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Blog Categories</h5>
-                  <ul class="icon-list">
-                    <li><a href="#">Photography - 7</a></li>
-                    <li><a href="#">Web Design - 3</a></li>
-                    <li><a href="#">Illustration - 12</a></li>
-                    <li><a href="#">Marketing - 1</a></li>
-                    <li><a href="#">Wordpress - 16</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Popular Posts</h5>
-                  <ul class="widget-posts">
-                    <li class="clearfix">
-                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
-                      <div class="widget-posts-body">
-                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
-                        <div class="widget-posts-meta">23 january</div>
-                      </div>
-                    </li>
-                    <li class="clearfix">
-                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div>
-                      <div class="widget-posts-body">
-                        <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
-                        <div class="widget-posts-meta">15 February</div>
-                      </div>
-                    </li>
-                  </ul>
+                  <h5 class="widget-title font-alt">Thanks for visiting me</h5>
+                  <div class="img-place">
+                    <img src="assets/images/killua2.png">
+                  </div>  
                 </div>
               </div>
             </div>
@@ -770,12 +462,13 @@
         <footer class="footer bg-dark">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2017&nbsp;<a href="index.html">TitaN</a>, All Rights Reserved</p>
-              </div>
-              <div class="col-sm-6">
-                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
-                </div>
+              <div class="col-sm-1">
+                <div class="social">
+                  <a href = "https://twitter.com/zakki_edelo"><span class="ti-twitter"></span></a>
+                  <a href = "https://www.instagram.com/geoscience_12"><span class="ti-instagram"></span></a>
+                  <a href = "https://www.linkedin.com/in/arham-zakki-edelo-11672a15b"><span class="ti-linkedin"></span></a>
+                  <a href = "https://github.com/arham99"><span class="ti-github"></span></a>
+                </div> 
               </div>
             </div>
           </div>
@@ -794,7 +487,7 @@
     <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
     <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
     <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/lib/smoothscroll.js"></script>
     <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
