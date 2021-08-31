@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="manifest" href="/manifest.json"> -->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -44,6 +44,8 @@
     <!-- Template specific stylesheets-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Patua+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
     <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -88,6 +90,19 @@
 
       <div class="home-section bg-dark-30" id="Home" data-background="assets/images/GeoService.jpg">
         <div class="container">
+          <div class="home-caption wow zoomInDown">
+            <div class="hm-cp-1 mb-20">Well Hello Everyone!</div>
+            <div class="hm-cp-3 mb-20">I'm Arham<span class="hm-cp-2"> Zakki </span>Edelo </div>
+            <div class="hm-cp-4">Geophysics Enthusiast</div>
+            <div class="social">
+              <a href = "https://twitter.com/zakki_edelo"><span class="ti-twitter"></span></a>
+              <a href = "https://www.instagram.com/geoscience_12"><span class="ti-instagram"></span></a>
+              <a href = "https://www.linkedin.com/in/arham-zakki-edelo-11672a15b"><span class="ti-linkedin"></span></a>
+              <a href = "https://github.com/arham99"><span class="ti-github"></span></a>
+            </div>
+          </div>         
+        </div>
+        <!-- <div class="container">
           <div class= "img-place wow bounceInUp">
             <div class="gradient-border" id="box">
               <img src="assets/images/me.jpg" style = "border-radius: 50%;"alt="Me">
@@ -104,43 +119,41 @@
             <a href = "https://www.linkedin.com/in/arham-zakki-edelo-11672a15b"><span class="ti-linkedin"></span></a>
             <a href = "https://github.com/arham99"><span class="ti-github"></span></a>
           </div> 
+        </div> -->
+      </div>
+      <div class="row" style="margin: auto;">
+        <div class="col-sm-2 col-sm-offset-5">
+          <div class="large-text align-center"><a class="section-scroll" href="#AboutMe"><i class="ti-angle-double-down"></i></a></div>
         </div>
       </div>
 
-      <div class="AboutMe-section parallax-bg" id ="AboutMe" style= "background-image: url(assets/images/img_TG6.jpg)">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-xs-offset-0 wow fadeInRight ">
-              <div class="font-prgf">Hello World!, welcome to the virtual version of me.
-                I recently graduated with a B.Eng degree in major of Geophysist, my area specialization includes
-                earthquake/microearthquake(MEQ) processing, seismic data quantitative interpretation, python 
-                programming for data science (geophysics), and mapping & geographic information system analyst.</div>
-              <div class="font-prgf">In nutshell, i really love science, technology and art, of course,
-                technology as art itself. I love watching movies and then reviewing their stories and graphical features in my personal blog,
-                designing web, creating video content, and editing photos even though technically it's not my field of education, but yes i just love doing it.
-                I realize earth science and engineering is a tough work field, it takes hard works as a team, integrity,  and high responsibility. Therefore, i extremely 
-                interested in developing myself to always be ready and fit to compete in this industry. </div>
-              <div class="font-prgf">That's all a brief description of me. I am open to every opportunity that you
-                might offer and so we can work together. My belief is that we only live for
-                this moment, so live this life, do your best, and make yourself happy, cheerio !!!:) </div>
-            </div>
+      <div class="AboutMe-section" id="AboutMe" style="background-image: url(assets/images/jek.png)">
+        <div class="container wow fadeInUp">
+          <div class="font-prgf wow">Hello World!, welcome to the virtual version of me.
+            I recently graduated with a B.Eng degree in major of Geophysist, my area specialization includes
+            earthquake/microearthquake (MEQ) processing, seismic data quantitative interpretation, python 
+            programming for data science (geophysics), and mapping & geographic information system analyst.
+          </div>
+          <div class="font-prgf">In nutshell, i really love science, technology and art, of course,
+            technology as art itself. I love watching movies and then reviewing their stories and graphical features in my personal blog,
+            designing web, creating video content, and editing photos even though technically it's not my field of education, but yes i just love doing it.
+            I realize earth science and engineering is a tough work field, it takes hard works as a team, integrity,  and high responsibility. Therefore, i extremely 
+            interested in developing myself to always be ready and fit to compete in this industry. 
+          </div>
+          <div class="font-prgf">That's all a brief description of me. I am open to every opportunity that you
+            might offer and so we can work together. My belief is that we only live for
+            this moment, so live this life, do your best, and make yourself happy, cheerio !!!:) 
           </div>
         </div>
       </div>
-      <!-- Musikk -->
-      <div class="song-section" id="song">
-        <audio id="lagu" src="assets/Video/Queen - Somebody To Love (Official Video).mp3" preload="auto"></audio>
-        <div class="text-center wow fadeInUp" onClick="togglePlay()"><b class="btn badge-subhead"><span class="ti-music-alt"></span> wanna hear some music? click here <span class="ti-music-alt"></span></b></div>
-      </div>
-
-      <div class="row">
+      <div class="row" style="margin: auto;">
         <div class="col-sm-2 col-sm-offset-5">
-          <div class="large-text align-center"><a class="section-scroll" href="#news"><i class="fa fa-angle-down"></i></a></div>
+          <div class="large-text align-center"><a class="section-scroll" href="#news"><i class="ti-angle-double-down"></i></a></div>
         </div>
       </div>
 
       <div>
-        <section class="module" id="news">
+        <section class="module" id="Blog">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
@@ -188,7 +201,7 @@
             </div>
           </div>
         </section>
-        <section class="module bg-dark-60" data-background="assets/images/section-6.jpg">
+        <section class="module bg-dark-60" data-background="assets/images/img_TG6.jpg">
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
@@ -300,7 +313,7 @@
             </div>
           </div>
         </section>       
-        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/testimonial_bg.jpg">
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/geopis.jpg">
           <div class="testimonials-slider pt-140 pb-140">
             <ul class="slides">
               <li>
@@ -495,6 +508,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/google-maps.js"></script>
     <script src="assets/js/topbar-virtual.js"></script>
-    <script src="assets/js/music.js"></script>
+    <!-- <script src="assets/js/music.js"></script> -->
   </body>
 </html>

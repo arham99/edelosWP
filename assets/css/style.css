@@ -915,12 +915,13 @@ blockquote {
   position: relative;
   font-family: "Quicksand",sans-serif;
   letter-spacing: 0px;
-  color:aliceblue;
-  font-weight: 300;
+  color:white;
+  font-weight: 500;
   padding-top:0px;
   font-size: 18px;
   text-align: justify;
   padding-bottom: 10px;
+  z-index: 99;
 }
 .font-alt {
   font-family: 'Quicksand', sans-serif;
@@ -936,15 +937,26 @@ blockquote {
 .rotate {
   text-shadow: none !important;
 }
+/* Animated Background */
 
-.social{
-  margin:auto;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
+.canvas {
+  z-index: 99;
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-section .social{
+  position: relative;
+  font-size: 25px;
+  padding:10px 70px;
   gap: 10px;
+  padding-bottom: 10px;
+  line-height: 1em;
 }
 .module-title {
+  font-family: 'Libre Franklin', sans-serif;
   position: relative;
   letter-spacing: 4px;
   text-align: center;
@@ -1132,6 +1144,40 @@ Hero Slider
 }
 
 /* Caption */
+
+.home-caption{
+  opacity: 0.95;
+  line-height: 3em;
+  top: 30%;
+  display: inline-block;
+  color: white;
+  font-family: 'Patua One', cursive;
+  position: relative;
+}
+.hm-cp-1{
+  font-size: 70px;
+  padding:20px 20px;
+  padding-bottom: 1px;
+}
+.hm-cp-2{
+  color: #FFC93C;
+  padding-top: 10px ;
+  font-size: 40px;
+  font-weight: 100;
+}
+.hm-cp-3{
+  font-size: 40px;
+  padding:10px 20px;
+  font-weight: 100;
+}
+.hm-cp-4{
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 27px;
+  font-weight: 100;
+  background-color: #1C92C9;
+  padding: 0em 0.2em 0em 0.2em;
+}
 
 .titan-caption {
   position: relative;
@@ -1436,6 +1482,7 @@ General Styles - Owlcarousel
 	Header
 --------------------------------------------------------------*/
 .home-section {
+  display: block;
   position: relative;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -1459,38 +1506,42 @@ General Styles - Owlcarousel
 
 .home-section .container{
   position: relative;
-  max-width:350px;
-  margin-right: auto;
-  margin-left: auto;
-  backdrop-filter:blur(8px);
+  width:100%;
   border-radius: 20px;
-  top: 40%;
-  border-color: blueviolet;
-  border-style: solid;
-  border-width: 1px;
+  top: 30%;
 }
 
 .home-section .img-place {
   position: relative;
   padding: 10px;
   margin:auto;
-  max-width: 160px;
-  min-height: 160px;
+  z-index: 99;
+  max-width: 600px;
+  min-height: 250px;
 }
 
 .AboutMe-section {
   position: relative;
-  display: block;
   padding: 50px 0px;
   width: 100%;
   overflow: hidden;
+  background-color:#080808;
+  height: 100%;
+  background-size:400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.AboutMe-section::before {
+  content: '';
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
-  background-size: cover;
+  opacity: 0.7;
+  background-color: rgba(43, 41, 41, 0.8);
+  z-index: 10;
 }
-
 
 
 .AboutMe-section .module-title {
@@ -1499,7 +1550,7 @@ General Styles - Owlcarousel
   text-align: left;
   font-weight: 400;
   font-size: 35px;
-  color: #111;
+  color:#140f07;
   margin: 0 0 70px;
 }
 
@@ -1512,17 +1563,14 @@ General Styles - Owlcarousel
   min-height: 240px;
   background-size: cover;
   overflow: unset;
+  z-index: 99;
 }
 .AboutMe-section .container{
   position: relative;
   width: 85%;
   margin-right: auto;
   margin-left: auto;
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: chocolate;
+
 }
 .timeline-section {
   display: flex;
@@ -3211,19 +3259,18 @@ Google map
     padding: 0px;
     font-size: 24px;
   }
-
   .font-prgf {
     position: relative;
     font-family: "Quicksand",sans-serif;
     letter-spacing: 0px;
     color:aliceblue;
-    font-weight: 200;
+    font-weight: 400;
     padding-top:0px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
     padding-bottom: 15px;
+    z-index: 99;
   }
-
   .timeline-section .container{
     position: relative;
     width: 100vw;
@@ -3232,7 +3279,6 @@ Google map
     backdrop-filter: blur(8px);
     border-radius: 20px;
   }
-
   .song-section .badge-subhead  {
     font-size: 8px;
     border-radius: 40px;
@@ -3247,17 +3293,47 @@ Google map
 
   .home-section .container{
     position: relative;
-    max-width:240px;
-    margin-right: auto;
-    margin-left: auto;
-    backdrop-filter:blur(8px);
-    border-radius: 20px;
-    top: 40%;
-    border-color: blueviolet;
-    border-style: solid;
-    border-width: 1px;
+    display: flex;
   }
-
+  .hm-cp-1{
+    font-size: 50px;
+    padding:20px 20px;
+    padding-bottom: 1px;
+  }
+  .hm-cp-2{
+    color: #FFC93C;
+    padding-top: 0px ;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .hm-cp-3{
+    font-size: 20px;
+    font-weight: 100;
+    padding:0px 20px;
+    ;
+  }
+  .hm-cp-4{
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: #1C92C9;
+    padding: 0em 0.2em 0em 0.2em;
+  }
+  .home-section .container{
+    position: relative;
+    width:100%;
+    border-radius: 20px;
+    top: 30%;
+  }
+  .home-section .social{
+    position: relative;
+    font-size: 18px;
+    padding:5px 30px;
+    gap: 10px;
+    padding-bottom: 10px;
+    line-height: 1em;
+  }
 
 }
 
