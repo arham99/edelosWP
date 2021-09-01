@@ -1,0 +1,151 @@
+.timeline {
+  position: relative;
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 2px;
+  height: 95%;
+  background-color: #e3e5e9;
+}
+
+.timeline li {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  width: 18px;
+  height: 18px;
+  background-color: #747474;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.timeline li .title {
+  width: 150px;
+  padding: 6px 20px;
+  background-color:chocolate;
+  backdrop-filter: blur(8px);
+  z-index: 1010;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 30px;
+  z-index: 99;
+}
+
+.timeline li .details {
+  background-color: #262626;
+  margin-top: 8px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.timeline li .details h5,
+.timeline li .details p {
+  margin-bottom: 0;
+}
+.timeline li .details p {
+  color:#6988a3 ;
+  text-align: justify;
+}
+.timeline li .details small {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color:chocolate;
+}
+
+.timeline li .details small {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color:chocolate;
+}
+.timeline h1,h2,h3,h4,h5 {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+.timeline p {
+  color: white;
+  font-weight:100;
+  font-size: 14px;
+}
+/* unvisited link */
+.timeline li .details a:link {
+  color: rgb(94, 81, 81);
+  
+}
+/* visited link */
+.timeline li .details a:visited {
+  color:chocolate;
+}
+/* mouse over link */
+.timeline li .details a:hover {
+  text-decoration: none;
+  color: rgb(218, 203, 210);
+}
+/* selected link */
+.timeline li .details a:active {
+  color: rgb(174, 52, 204);
+}
+
+
+/* unvisited link */
+.timeline li .details h5 a:link {
+  color: rgb(94, 81, 81);
+  
+}
+/* visited link */
+.timeline li .details h5 a:visited {
+  color:white;
+}
+/* mouse over link */
+.timeline li .details h5 a:hover {
+  text-decoration: none;
+  color: rgb(73, 93, 207);
+}
+/* selected link */
+.timeline li .details h5 a:active {
+  color: rgb(174, 52, 204);
+}
+
+/* unvisited link */
+.home-section a:link {
+  color: aliceblue;  
+}
+
+/* visited link */
+.home-section a:visited {
+  color:blueviolet;
+}
+/* mouse over link */
+.home-section a:hover {
+  text-decoration: none;
+  color: rgb(99, 187, 209);
+}
+/* selected link */
+.home-section a:active {
+  color: rgb(174, 52, 204);
+}
